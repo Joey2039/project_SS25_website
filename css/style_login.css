@@ -242,6 +242,34 @@ body {
 .container input:checked + .checkmark svg {
   opacity: 1;
 }
+.login__container{
+  display: flex;
+  justify-content: center;
+  transform:translate(-30vw, -63vh);
+  opacity: 0;
+  z-index: -99;
+}
+.login__successful{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: 36vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  background-color: #171717;
+  border-radius: 25px;
+}
+.login__successful p {
+  font-size: 1.5rem;
+  color: green;
+  text-align: center;
+}
 /* Mobile Responsive */
 @media screen and (max-width: 960px) {
   .main__container {
