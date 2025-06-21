@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aero-Bikes</title>
-    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
-    
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -101,5 +100,33 @@
         </div>
       </div>
     </div>
+    <!-- Chatbot -->
+    <div class="chat__bot">
+      <div class="chat__bot--container">
+        <button class="chatbot__button" onclick="chatbotToggle()" id="chatbot--main">
+          <img src="/images/message_1.svg" alt="Chatbot" id="chatbot-icon" />
+        </button>
+      </div>
+      <!-- From Uiverse.io by ahmed150up -->
+      <div class="chat-card" id="chat-card">
+        <div class="chat-header">
+          <div class="h2">ChatGPT</div>
+          <div class="close-button" onclick="chatbotClose()" >
+            <img src="/images/close.svg" alt="Close"id="chatbot-close" />
+          </div>
+        </div>
+        <div class="chat-body">
+          <div class="message incoming">
+            <p>Hello, how can I assist you today?</p>
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input placeholder="Type your message" type="text" id="chatbot-input"/>
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/chatbot_toggle.js"></script>
+    <script src="scripts/chatbot_reagtion.js"></script>
   </body>
 </html>

@@ -8,7 +8,7 @@ const PORT = 3000;
 
 // Middleware to parse JSON requests
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static("public"));
 
 // Endpoint to save user data
 app.post("/save_user_data", (req, res) => {
