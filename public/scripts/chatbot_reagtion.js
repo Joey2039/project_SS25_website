@@ -56,7 +56,6 @@ class Bot {
 
   reaction_to_Message(message) {
     const nachricht = message.toLowerCase();
-    nachricht = this.filter(nachricht); // Filter the message to remove unwanted characters
     let inhalt = "Ich versteh gar nichts";
     let content_key = "";
     for (const key in this.dict) {
@@ -137,7 +136,7 @@ function sendMessage() {
   userMessageElement.innerHTML = `<p>${message}</p>`;
   chatbody.appendChild(userMessageElement);
 
-  // Get the bot's response
+  
   const botResponse = bot.reaction_to_Message(message);
 
   // Add the bot's response to the chat

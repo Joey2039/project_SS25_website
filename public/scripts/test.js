@@ -1,16 +1,28 @@
 const { logMessage } = require("./logger");
+const fs = require("fs");
+const path = require("path");
 
-const intents = {
+// Load intents from dictionary_data.json
+let intents = {
   price: ["price", "cost", "kosten"],
   help: ["help", "support", "hilfe"],
-  contact: ["contact", "kontakt", "email"]
+  contact: ["contact", "kontakt", "email"],
 };
+
+const dictionaryPath = path.join(__dirname, "dictionary_data.json");
+
+try {
+  const data = fs.readFileSync(dictionaryPath, "utf8");
+  intents = JSON.parse(data);
+} catch (error) {
+  console.error("Failed to load dictionary data:", error);
+}
 
 function detectIntent(input) {
   const lower = input.toLowerCase();
 
   for (const [intent, keywords] of Object.entries(intents)) {
-    if (keywords.some(word => lower.includes(word))) {
+    if (keywords.some((word) => lower.includes(word))) {
       return intent;
     }
   }
@@ -40,6 +52,9 @@ async function handleUserInput(userId, message) {
 
 // 🔁 Simulate a user message
 (async () => {
-  const response = await handleUserInput("user123", "How do i contact you?");
+  const response = await handleUserInput(
+    "user123",
+    "what is the price of your cost?"
+  );
   console.log("🤖 Bot reply:", response);
 })();

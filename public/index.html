@@ -103,7 +103,11 @@
     <!-- Chatbot -->
     <div class="chat__bot">
       <div class="chat__bot--container">
-        <button class="chatbot__button" onclick="chatbotToggle()" id="chatbot--main">
+        <button
+          class="chatbot__button"
+          onclick="chatbotToggle()"
+          id="chatbot--main"
+        >
           <img src="/images/message_1.svg" alt="Chatbot" id="chatbot-icon" />
         </button>
       </div>
@@ -111,8 +115,8 @@
       <div class="chat-card" id="chat-card">
         <div class="chat-header">
           <div class="h2">Aero Assident</div>
-          <div class="close-button" onclick="chatbotClose()" >
-            <img src="/images/close.svg" alt="Close"id="chatbot-close" />
+          <div class="close-button" onclick="chatbotClose()">
+            <img src="/images/close.svg" alt="Close" id="chatbot-close" />
           </div>
         </div>
         <div class="chat-body">
@@ -121,12 +125,22 @@
           </div>
         </div>
         <div class="chat-footer">
-          <input placeholder="Type your message" type="text" id="chatbot-input"/>
+          <input
+            placeholder="Type your message"
+            type="text"
+            id="chatbot-input"
+          />
           <button onclick="sendMessage()">Send</button>
         </div>
       </div>
     </div>
     <script src="scripts/chatbot_toggle.js"></script>
-    <script src="scripts/chatbot_reagtion.js"></script>
+    <script type="module" src="scripts/chatbot_reagtion_v2.js"></script>
+    <script type="module">
+      import { sendMessage } from "./scripts/chatbot_reagtion_v2.js";
+
+      // Attach the sendMessage function to the global scope
+      window.sendMessage = sendMessage;
+    </script>
   </body>
 </html>
