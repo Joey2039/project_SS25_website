@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Joey2039/project_SS25_website#readme",
   "dependencies": {
+    "@azure/data-tables": "^13.3.1",
     "express": "^5.1.0"
-  },
-  "devDependencies": {}
+  }
 }

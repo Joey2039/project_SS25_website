@@ -1,0 +1,17 @@
+{
+    "spe_perf_comf_tech": ["speed", "performance", "comfort", "technology"],
+    "spe_tech_aesth_cycle": ["speed", "technology", "aesthetics", "cycling"],
+    "perf_comf_tech_aesth": ["performance", "comfort", "technology", "aesthetics"],
+    "tech_aesth_cycle_exper": ["technology", "aesthetics", "cycling", "experience"],
+    "city_qual_innov_effic": ["city streets", "quality", "innovation", "efficiency"],
+    "power_aero_drag_endur": ["power", "aerodynamics", "drag", "endurance"],
+    "helm_shoe_access_price": ["helmet", "shoes", "accessories", "price"],
+    "custom_finan_discount": ["customize", "financing", "discount", "setup"],
+    "trade_serv_shipment": ["trade-in", "deal", "service", "shipment"],
+    "eco_event_tutorial_ret": ["eco-friendly", "event", "tutorial", "return policy"],
+    "explain_spe_perf_tech": ["explain", "speed", "performance", "technology"],
+    "explain_city_innov_effic": ["explain", "city streets", "innovation", "efficiency"],
+    "explain_power_aero_endur": ["explain", "power", "aerodynamics", "endurance"],
+    "explain_helm_shoe_price": ["explain", "helmet", "shoes", "price"],
+    "explain_trade_serv_ship": ["explain", "trade-in", "service", "shipment"]
+  }
