@@ -6,6 +6,10 @@
     <title>Aero-Bikes</title>
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -47,9 +51,9 @@
         </div>
       </div>
       <div class="main__container">
-        <div class="main__content">
-          <h2>Explore the world of Aero-Bikes</h2>
-          <p>
+        <div class="main__content first">
+          <h3>Explore the world of Aero-Bikes</h3>
+          <p id="main__content--p">
             Discover the thrill of speed with Aero Bikes! Designed for ultimate
             performance and comfort, our bikes offer cutting-edge technology and
             sleek aesthetics to elevate your cycling experience. Whether you're
@@ -64,13 +68,13 @@
         </div>
       </div>
       <div class="main__container">
-        <div class="main__img--container">
+        <div class="main__img--container" id="main__img--order">
           <div class="main__img--fade3"></div>
           <img src="/images/tites_image3.jpg" alt="Bike" id="main__img" />
         </div>
-        <div class="main__content">
-          <h2>Introducing our Aero Frame</h2>
-          <p>
+        <div class="main__content" id="main__content--order">
+          <h3>Introducing our Aero Frame</h3>
+          <p id="main__content--p">
             designed for exceptional efficiency and power savings! Engineered
             with aerodynamics in mind, this frame reduces drag, allowing you to
             maintain speed while conserving energy. Experience smoother rides
@@ -82,8 +86,8 @@
       </div>
       <div class="main__container">
         <div class="main__content">
-          <h2>DT-Swiss Aero Wheels</h2>
-          <p>
+          <h3>DT-Swiss Aero Wheels</h3>
+          <p id="main__content--p">
             Unleash superior aerodynamics with DT Swiss wheels, expertly crafted
             with high rims for enhanced performance! Designed to reduce drag and
             maximize speed, these wheels offer a sleek profile that cuts through
@@ -111,7 +115,6 @@
           <img src="/images/message_1.svg" alt="Chatbot" id="chatbot-icon" />
         </button>
       </div>
-      <!-- From Uiverse.io by ahmed150up -->
       <div class="chat-card" id="chat-card">
         <div class="chat-header">
           <div class="h2">Aero Assident</div>
@@ -121,7 +124,17 @@
         </div>
         <div class="chat-body">
           <div class="message incoming">
-            <p>Hello, how can I assist you today?</p>
+            <p>
+              Hello! I'm Aero Assistant, your specialist for all things road
+              bikes. Here to help you find the perfect ride, answer your
+              questions, and enhance your shopping experience.
+            </p>
+          </div>
+          <div class="message incoming">
+            <p>
+              You can ask me about for example about the compatible of
+              accessories.
+            </p>
           </div>
         </div>
         <div class="chat-footer">
@@ -134,12 +147,11 @@
         </div>
       </div>
     </div>
+    <script src="/scripts/app.js"></script>
     <script src="scripts/chatbot_toggle.js"></script>
     <script type="module" src="scripts/chatbot_reagtion_v2.js"></script>
     <script type="module">
       import { sendMessage } from "./scripts/chatbot_reagtion_v2.js";
-
-      // Attach the sendMessage function to the global scope
       window.sendMessage = sendMessage;
     </script>
   </body>

@@ -1,4 +1,5 @@
-function signUp() {
+import { logUserData } from "./logger.js";
+export async function signUp() {
   function validateSignUpForm() {
     const checker_newsletter =
       document.getElementById("checker_newsletter").checked;
@@ -33,7 +34,7 @@ function signUp() {
     console.log("Updating sign-up page...");
   }
 
-  function saveSignUpData() {
+  async function saveSignUpData() {
     const userData = {
       email: document.getElementById("email-input").value,
       newsletter: document.getElementById("checker_newsletter").checked,
@@ -42,27 +43,7 @@ function signUp() {
 
     console.log("Preparing to send user data:", userData);
 
-    // Send data to the server
-    fetch("http://localhost:3000/save_user_data", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(userData),
-    })
-      .then((response) => {
-        if (response.ok) {
-          console.log("Sign-up data saved successfully!");
-        } else {
-          console.error(
-            "Failed to save sign-up data. Status:",
-            response.status
-          );
-        }
-      })
-      .catch((error) => {
-        console.error("Error during fetch:", error);
-      });
+    await logUserData(userData.email, userData.agb, userData.newsletter)
   }
 
   console.log("Sign-up function called.");

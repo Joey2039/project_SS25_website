@@ -1,10 +1,8 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 .main {
   background: #141414;
+}
+.spacer {
+  height: 20px;
 }
 .main__container {
   display: grid;
@@ -49,8 +47,27 @@
   line-height: 0.9;
   position: relative;
 }
+.main__content h3 {
+  font-size: 2.5rem;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #b721ff 0%, #21d4d4 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  line-height: 0.9;
+  position: relative;
+}
 .main__content p {
   font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #ffff;
+  position: relative;
+}
+#main__content--p {
+  font-size: 1.5rem;
   margin-top: 1rem;
   font-weight: 700;
   color: #ffff;
@@ -67,7 +84,7 @@
   position: relative;
   height: 80vh;
   width: 130%;
-  margin: -30%;
+  margin-left: -30%;
 }
 .main__img--fade {
   height: 100%;
@@ -118,7 +135,14 @@
   margin: auto;
   z-index: 0;
 }
-/* Mobile Responsive */
+#main__content--order
+  {
+  order: 2;
+}
+#main__img--order
+  {
+  order: 1;
+}
 @media screen and (max-width: 960px) {
   .main__container {
     display: grid;
@@ -128,27 +152,103 @@
     height: 90vh;
     margin: 0 auto;
     width: 100%;
+    padding-top: 2rem;
   }
 
   .main__content {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: -4rem;
+  }
+  .main__content.second {
+    margin-top: -100px;
   }
   .main__content h1 {
     font-size: 2.5rem;
-    margin-top: 2rem;
   }
   .main__content h2 {
     font-size: 3rem;
   }
+  .main__content h3 {
+    font-size: 2rem;
+  }
   .main__content p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-top: 1rem;
   }
-  #main__img {
-    height: 420px;
-    width: 100%;
+  .main__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
   }
+  .main__img--container {
+    margin-top: 2vh;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+  }
+  .main__img--fade {
+    background: linear-gradient(
+      to bottom,
+      rgba(20, 20, 20, 0) 0%,
+      rgba(20, 20, 20, 0) 10%,
+      rgba(20, 20, 20, 0) 40%,
+      rgba(20, 20, 20, 1) 90%
+    );
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .main__img--container2 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    margin-left: 0;
+    margin-top: -15vh;
+    overflow: hidden;
+  }
+  .main__img--fade2 {
+    background: linear-gradient(
+      to top,
+      rgba(20, 20, 20, 0) 0%,
+      rgba(20, 20, 20, 0) 10%,
+      rgba(20, 20, 20, 0) 60%,
+      rgba(20, 20, 20, 1) 100%
+    );
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .main__img--fade3 {
+    background: linear-gradient(
+      to Top,
+      rgba(20, 20, 20, 1) 0%,
+      rgba(20, 20, 20, 0) 40%,
+      rgba(20, 20, 20, 0) 60%,
+      rgba(20, 20, 20, 1) 100%
+    );
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  #main__img {
+    width: 100%;
+    height: 100%;
+  }
+  #main__img2 {
+    width: 100%;
+    height: 100%;
+  }
+  #main__content--order
+  {
+  order: 1;
+}
+#main__img--order
+  {
+  order: 2;
+}
 }
 @media screen and (max-width: 480px) {
   .main__content h1 {
@@ -160,5 +260,9 @@
   }
   .main__content p {
     margin-top: 2rem;
+  }
+  .main__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
   }
 }

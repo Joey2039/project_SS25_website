@@ -20,7 +20,7 @@ body {
   align-items: center;
   margin: 3rem auto;
 }
-.main{
+.main {
   max-width: 1700px;
   display: flex;
   justify-content: center;
@@ -44,11 +44,10 @@ body {
     transition: all 0.3s ease-in-out;
   }
 }
-  #main__img:hover{
-    box-shadow: 0 0 10px #f77062;
-    border-color: #f77062;
-  }
-
+#main__img:hover {
+  box-shadow: 0 0 10px #f77062;
+  border-color: #f77062;
+}
 
 .main__img--container {
   display: flex;
@@ -58,9 +57,8 @@ body {
   width: 100%;
   background-color: #f2f2f2;
   border-radius: 12px;
-  border:  solid #f2f2f2;
+  border: solid #f2f2f2;
   overflow: hidden;
-  
 }
 .main__content {
   display: flex;
@@ -90,11 +88,11 @@ body {
   color: #141414;
 }
 .main__content h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #141414;
 }
 #main__img {
-
+  height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 8px;
@@ -105,48 +103,65 @@ body {
 .spacer {
   margin: 2rem 0;
 }
-
+@media screen and (max-width: 1100px) {
+  .main__content--center {
+    padding: 4rem;
+  }
+  .main__content h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .main__content h2 {
+    font-size: 4rem;
+  }
+  .main__content h2 {
+    font-size: 2.5rem;
+  }
+}
 /* Mobile Responsive */
 @media screen and (max-width: 960px) {
-  .main__container {
-    display: grid;
-    grid-template-columns: auto;
-    justify-self: center;
-    align-items: center;
-    height: 90vh;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .main__content {
-    text-align: center;
-    margin-top: 4rem;
+  .main__content--center {
+    padding: 2rem;
   }
   .main__content h1 {
     font-size: 2.5rem;
     margin-top: 2rem;
   }
   .main__content h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .main__content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 1rem;
   }
   #main__img {
-    height: 420px;
+    height: 100%;
     width: 100%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .main__content h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .main__content h2 {
+    font-size: 1.8rem;
+  }
+  .main__content p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
   .main__content h1 {
-    font-size: 2rem;
-    margin-top: 3rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
   }
   .main__content h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .main__content p {
-    margin-top: 2rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
   }
 }

@@ -40,12 +40,11 @@
         <div class="card__content">
           <p class="card__title">Explore our range of Aero Bikes</p>
           <p class="card__description">
-            Discover the world of Aero Bikes! Designed for ultimate performance
-            and comfort, our bikes offer cutting-edge technology and sleek
-            aesthetics to elevate your cycling experience. Whether you're
-            conquering trails or cruising city streets, Aero Bikes guarantees
-            smooth and dynamic rides every time. Ride into the future—choose
-            Aero Bikes for unparalleled quality and innovation.
+            Experience the Aero Bike, designed for speed enthusiasts and
+            competitive riders. Crafted from lightweight carbon, this aero bike
+            offers optimal stiffness and power transfer. Featuring DT Swiss aero
+            wheels and an integrated cockpit, the Aero Bike ensures minimal drag
+            and maximum control—perfect for racing and high-speed training.
           </p>
           <a href="/login.html" class="card__button">Sign Up</a>
           <a href="/bike_more_info.html" class="card__button secondary"
@@ -56,17 +55,16 @@
       <div class="card">
         <img src="/images/tites_image6.jpg" alt="Bike" id="main__img" />
         <div class="card__content">
-          <p class="card__title">Explore our range of Aero Bikes</p>
+          <p class="card__title">Explore our range of Time Trial Bike</p>
           <p class="card__description">
-            Discover the world of Aero Bikes! Designed for ultimate performance
-            and comfort, our bikes offer cutting-edge technology and sleek
-            aesthetics to elevate your cycling experience. Whether you're
-            conquering trails or cruising city streets, Aero Bikes guarantees
-            smooth and dynamic rides every time. Ride into the future—choose
-            Aero Bikes for unparalleled quality and innovation.
+            Dominate the clock with the Time Trial Bike, engineered for superior
+            aerodynamics in time trials and triathlons. With its sleek carbon
+            frame, DT Swiss aero wheels, and adjustable aero bars, it delivers
+            peak performance. Optimize your ride with internal cable routing and
+            a precise fit, making every second count in your race against time.
           </p>
           <a href="/login.html" class="card__button">Sign Up</a>
-          <a href="/bike_more_info.html" class="card__button secondary"
+          <a href="/bike_more_info_2.html" class="card__button secondary"
             >More Info</a
           >
         </div>
@@ -74,57 +72,115 @@
       <div class="accessories">
         <h2 class="accessories__title">Accessories</h2>
         <div class="accessories__grid">
-          <div class="accessory__card">
-            <div class="accessory">
-              <p class="accessory__name">Helmet</p>
-              <div class="accessory__img--container">
-                <img
-                  src="/images/accessory0.jpg"
-                  alt="Accessory 1"
-                  id="acc_img"
-                />
+          <a href="/login.html">
+            <div class="accessory__card" href="/login.html">
+              <div class="accessory">
+                <p class="accessory__name">Helmet</p>
+                <div class="accessory__img--container">
+                  <img
+                    src="/images/accessory0.jpg"
+                    alt="Accessory 1"
+                    id="acc_img"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accessory__card">
-            <div class="accessory">
-              <p class="accessory__name">Shoes</p>
-              <div class="accessory__img--container2">
-                <img
-                  src="/images/accessory1.jpg"
-                  alt="Accessory 1"
-                  id="acc_img"
-                />
+          </a>
+          <a href="/login.html">
+            <div class="accessory__card">
+              <div class="accessory">
+                <p class="accessory__name">Shoes</p>
+                <div class="accessory__img--container2">
+                  <img
+                    src="/images/accessory1.jpg"
+                    alt="Accessory 1"
+                    id="acc_img2"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accessory__card">
-            <div class="accessory">
-              <p class="accessory__name">Gloves</p>
-              <div class="accessory__img--container3">
-                <img
-                  src="/images/accessory2.jpg"
-                  alt="Accessory 2"
-                  id="acc_img"
-                />
+          </a>
+          <a href="/login.html">
+            <div class="accessory__card">
+              <div class="accessory">
+                <p class="accessory__name">Gloves</p>
+                <div class="accessory__img--container3">
+                  <img
+                    src="/images/accessory2.jpg"
+                    alt="Accessory 2"
+                    id="acc_img"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accessory__card">
-            <div class="accessory">
-              <p class="accessory__name">Water Bottle</p>
-              <div class="accessory__img--container4">
-                <img
-                  src="/images/accessory3.jpg"
-                  alt="Accessory 3"
-                  id="acc_img"
-                />
+          </a>
+          <a href="/login.html">
+            <div class="accessory__card">
+              <div class="accessory">
+                <p class="accessory__name">Water Bottle</p>
+                <div class="accessory__img--container4">
+                  <img
+                    src="/images/accessory3.jpg"
+                    alt="Accessory 3"
+                    id="acc_img3"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="spacer"></div>
     </div>
+    <!-- Chatbot -->
+    <div class="chat__bot">
+      <div class="chat__bot--container">
+        <button
+          class="chatbot__button"
+          onclick="chatbotToggle()"
+          id="chatbot--main"
+        >
+          <img src="/images/message_1.svg" alt="Chatbot" id="chatbot-icon" />
+        </button>
+      </div>
+      <div class="chat-card" id="chat-card">
+        <div class="chat-header">
+          <div class="h2">Aero Assident</div>
+          <div class="close-button" onclick="chatbotClose()">
+            <img src="/images/close.svg" alt="Close" id="chatbot-close" />
+          </div>
+        </div>
+        <div class="chat-body">
+          <div class="message incoming">
+            <p>
+              Hello! I'm Aero Assistant, your specialist for all things road
+              bikes. Here to help you find the perfect ride, answer your
+              questions, and enhance your shopping experience.
+            </p>
+          </div>
+          <div class="message incoming">
+            <p>
+              You can ask me about for example about the compatible of
+              accessories.
+            </p>
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input
+            placeholder="Type your message"
+            type="text"
+            id="chatbot-input"
+          />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+    <script src="/scripts/app.js"></script>
+    <script src="scripts/chatbot_toggle.js"></script>
+    <script type="module" src="scripts/chatbot_reagtion_v2.js"></script>
+    <script type="module">
+      import { sendMessage } from "./scripts/chatbot_reagtion_v2.js";
+      window.sendMessage = sendMessage;
+    </script>
   </body>
 </html>

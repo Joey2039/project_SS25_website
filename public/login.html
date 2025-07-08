@@ -77,7 +77,7 @@
               </svg>
             </div>
           </label>
-          <label>Informe about about new Releases</label>
+          <label>Inform me about about new Releases</label>
         </div>
         <div class="checker">
           <label class="container">
@@ -100,9 +100,9 @@
               </svg>
             </div>
           </label>
-          <label>Informe about about new Releases</label>
+          <label>I accept the <a href="#" id="AGB">AGB</a></label>
         </div>
-        <button class="button3" type='button'id="sign" onclick="signUp()">
+        <button class="button3" type="button" id="sign" onclick="signUp()">
           Sign Up
         </button>
       </form>
@@ -112,6 +112,11 @@
         <p id="login_successful">Login successful</p>
       </div>
     </div>
-    <script src="/scripts/sign_up_script.js"></script>
+    <script type="module" src="./scripts/sign_up_script.js"></script>
+    <script type="module">
+      import { signUp } from "./scripts/sign_up_script.js";
+      window.signUp = signUp;
+    </script>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>

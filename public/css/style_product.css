@@ -41,7 +41,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 15vh 15vw;
+  padding: 5% 15%;
+  opacity: 0;
 
   box-sizing: border-box;
   background-color: #f2f2f2;
@@ -52,6 +53,7 @@
 
 .card:hover .card__content {
   transform: rotateX(0deg);
+  opacity: 1;
 }
 
 .card__title {
@@ -62,13 +64,14 @@
 }
 
 .card__description {
-  margin: 10px 0 10px;
+  margin: 10px 0 1.5rem;
   font-size: 1.5rem;
   color: #777;
   line-height: 1.4;
 }
 
 .card__button {
+  margin-top: 1rem;
   padding: 15px;
   border-radius: 8px;
   background: #777;
@@ -83,7 +86,6 @@
   border: 1px solid #777;
 }
 #main__img {
-  object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -110,6 +112,7 @@
 }
 .accessory__card {
   max-width: 650px;
+
   margin: 2%;
   position: relative;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
@@ -120,7 +123,6 @@
   background-color: #3d3c3d;
 }
 .accessory__card:hover {
-  
   transform: scale(1.025);
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -151,40 +153,55 @@
 .accessory__img--container {
   text-align: center;
   position: relative;
-  height: 110%;
+  height: 95%;
+  max-height: 640px;
   width: 100%;
-  transform: translateY(-4.5rem);
+  overflow: hidden;
+  transform: translateY(-3.5rem);
   z-index: -1;
 }
 .accessory__img--container2 {
   margin-top: 2rem;
-
+  max-height: 640px;
   text-align: center;
   position: relative;
   height: 75%;
-  transform: translateY(1.5rem);
+  overflow: hidden;
+  transform: translateY(-1.5rem);
   width: 100%;
   z-index: -1;
 }
 .accessory__img--container3 {
-
   text-align: center;
   justify-content: center;
   position: relative;
-  height: 60vh;
-  transform: translateX(6rem);
-  aspect-ratio: 9/11;
+  max-height: 680px;
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
   z-index: -1;
 }
 .accessory__img--container4 {
   text-align: center;
+  justify-content: center;
   position: relative;
+  margin-top: 1rem;
+  max-height: 695px;
   height: 100%;
   width: 100%;
+  overflow: hidden;
   transform: translateY(-3rem);
   z-index: -1;
 }
 #acc_img {
+  height: 100%;
+  width: auto;
+}
+#acc_img2 {
+  height: auto;
+  width: 100%;
+}
+#acc_img3 {
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -192,7 +209,23 @@
 .spacer {
   height: 60vh;
 }
-
+@media screen and (max-width: 1100px) {
+  .card__title {
+    font-size: 1.5rem;
+  }
+  .card__content {
+    padding: 10% 10%;
+  }
+  .card__description {
+    font-size: 1.3rem;
+    margin: 5px 0 2rem;
+    line-height: 1.3;
+  }
+  .card__button {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
 /* Mobile Responsive */
 @media screen and (max-width: 960px) {
   .main__container {
@@ -213,27 +246,73 @@
     font-size: 2.5rem;
     margin-top: 2rem;
   }
-  .main__content h2 {
-    font-size: 3rem;
+  .accessories h2 {
+    font-size: 2.5rem;
   }
-  .main__content p {
-    font-size: 1.5rem;
+  .accessory p {
+    font-size: 2.5rem;
     margin-top: 1rem;
   }
+  .accessories__grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 0 20px;
+  }
+  .accessory__card {
+    width: 90vw;
+    margin: 2% auto;
+  }
+  .card {
+    width: 90vw;
+  }
+  .card__title {
+    font-size: 1.4rem;
+  }
+  .card__content {
+    padding: 5% 5%;
+  }
+  .card__description {
+    font-size: 1rem;
+    margin: 5px 0 1.5rem;
+    line-height: 1.3;
+  }
+  .card__button {
+    font-size: 1rem;
+    padding: 10px;
+  }
   #main__img {
-    height: 420px;
+    height: 100%;
     width: 100%;
   }
+  .spacer {
+    height: 0;
+  }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .main__content h1 {
     font-size: 2rem;
     margin-top: 3rem;
   }
-  .main__content h2 {
+  .accessories h2 {
     font-size: 2rem;
   }
-  .main__content p {
-    margin-top: 2rem;
+  .accessory p {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .card__title {
+    font-size: 1.2rem;
+  }
+  .card__content {
+    padding: 3% 3%;
+  }
+  .card__description {
+    font-size: 0.8rem;
+    margin: 5px 0 1rem;
+    line-height: 1.1;
+  }
+  .card__button {
+    font-size: 0.8rem;
+    padding: 10px;
   }
 }

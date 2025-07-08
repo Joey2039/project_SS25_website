@@ -1,53 +1,447 @@
 {
-  "speed": ["speed", "velocity", "quickness", "rapidity"],
-  "performance": ["performance", "efficiency", "effectiveness", "capability"],
-  "comfort": ["comfort", "ease", "coziness", "relaxation"],
-  "technology": ["technology", "innovation", "engineering", "tech"],
-  "aesthetics": ["aesthetics", "design", "appearance", "style"],
-  "cycling": ["cycling", "biking", "bicycling", "pedaling"],
-  "experience": ["experience", "interaction", "encounter", "engagement"],
-  "trails": ["trails", "paths", "tracks", "routes"],
-  "city streets": ["city streets", "urban roads", "avenues", "town lanes"],
-  "quality": ["quality", "excellence", "standard", "caliber"],
-  "innovation": ["innovation", "creativity", "development", "advancement"],
-  "efficiency": ["efficiency", "productivity", "effectiveness", "proficiency"],
-  "power": ["power", "energy", "force", "strength"],
-  "savings": ["savings", "economy", "reduction", "decrease"],
-  "aerodynamics": ["aerodynamics", "airflow", "dynamics", "motion"],
-  "drag": ["drag", "resistance", "friction", "hindrance"],
-  "endurance": ["endurance", "stamina", "resilience", "durability"],
-  "racing": ["racing", "competition", "contest", "event"],
-  "precision": ["precision", "accuracy", "exactness", "detail"],
-  "momentum": ["momentum", "impulse", "drive", "force"],
-  "adventure": ["adventure", "excitement", "exploration", "journey"],
-  "helmet": ["helmet", "headgear", "protective covering"],
-  "shoes": ["shoes", "footwear", "sneakers", "boots"],
-  "accessories": ["accessories", "gear", "equipment", "apparatus"],
-  "price": ["price", "cost", "value", "expense"],
-  "explain": ["explain", "clarify", "describe", "elaborate"],
-  "compare": ["compare", "contrast", "match", "evaluate"],
-  "customize": ["customize", "personalize", "modify", "adapt"],
-  "warranty": ["warranty", "guarantee", "assurance", "protection"],
-  "financing": ["financing", "payment plan", "credit", "installment"],
-  "test ride": ["test ride", "trial", "demo", "try out"],
-  "discount": ["discount", "offer", "deal", "reduction"],
-  "compatible": ["compatible", "suitable", "matching", "fit"],
-  "maintenance": ["maintenance", "care", "service", "upkeep"],
-  "service": ["service", "repair", "help", "support"],
-  "shipment": ["shipment", "delivery", "dispatch", "transport"],
-  "international": ["international", "global", "worldwide", "overseas"],
-  "safety": ["safety", "protection", "security", "precaution"],
-  "beginner": ["beginner", "novice", "starter", "learner"],
-  "upgrade": ["upgrade", "improve", "enhance", "advance"],
-  "community": ["community", "group", "network", "forum"],
-  "eco-friendly": ["eco-friendly", "sustainable", "green", "environmental"],
-  "coupon": ["coupon", "voucher", "promo code", "discount"],
-  "event": ["event", "occasion", "activity", "function"],
-  "tutorial": ["tutorial", "guide", "lesson", "instruction"],
-  "setup": ["setup", "configuration", "installation", "arrangement"],
-  "return policy": ["return policy", "refund", "exchange", "return"],
-  "payment": ["payment", "transaction", "fee", "purchase"],
-  "specification": ["specification", "detail", "feature", "characteristic"],
-  "trade-in": ["trade-in", "exchange", "swap", "replacement"],
-  "deal": ["deal", "bargain", "offer", "agreement"]
+  "speed": {
+    "keywords": ["speed", "velocity", "quickness", "rapidity"],
+    "objects": ["aero bike", "cyclist", "track", "race"]
+  },
+  "performance": {
+    "keywords": ["performance", "efficiency", "effectiveness", "capability"],
+    "objects": ["aero bike", "gear", "derailleur", "cadence"]
+  },
+  "comfort": {
+    "keywords": [
+      "ease",
+      "pleasantness",
+      "comfort",
+      "riding ease",
+      "coziness",
+      "relaxation",
+      "smoothness"
+    ],
+    "objects": [
+      "saddle",
+      "ergonomic grips",
+      "grip",
+      "handlebars",
+      "riding posture",
+      "shock-absorbing tires",
+      "suspension seatpost"
+    ]
+  },
+  "technology": {
+    "keywords": [
+      "innovation",
+      "digital integration",
+      "tech features",
+      "tech",
+      "technology",
+      "engineering",
+      "electronics"
+    ],
+    "objects": [
+      "carbon frame",
+      "aero bike",
+      "e-bike controller",
+      "GPS tracker",
+      "integrated sensors",
+      "wireless shifter",
+      "mobile app integration"
+    ]
+  },
+  "aesthetics": {
+    "keywords": ["aesthetics", "design", "appearance", "style"],
+    "objects": ["paintwork", "frame design", "graphics", "wheelset"]
+  },
+  "cycling": {
+    "keywords": ["cycling", "biking", "bicycling", "pedaling"],
+    "objects": ["aero bike", "chainring", "pedal", "terrain"]
+  },
+  "experience": {
+    "keywords": ["experience", "interaction", "encounter", "engagement"],
+    "objects": [
+      "ride quality",
+      "road feel",
+      "aero advantage",
+      "long-distance ride"
+    ]
+  },
+  "trails": {
+    "keywords": ["trails", "paths", "tracks", "routes"],
+    "objects": ["road cycling", "city routes", "bike lanes", "touring paths"]
+  },
+  "city streets": {
+    "keywords": ["city streets", "urban roads", "avenues", "town lanes"],
+    "objects": [
+      "commuter bike",
+      "traffic navigation",
+      "urban cycling",
+      "bike-friendly infrastructure"
+    ]
+  },
+  "quality": {
+    "keywords": ["quality", "excellence", "standard", "caliber"],
+    "objects": [
+      "frame material",
+      "build quality",
+      "component choice",
+      "durability"
+    ]
+  },
+  "innovation": {
+    "keywords": ["innovation", "creativity", "development", "advancement"],
+    "objects": [
+      "aero dynamics",
+      "smart features",
+      "new materials",
+      "design evolution"
+    ]
+  },
+  "efficiency": {
+    "keywords": ["efficiency", "productivity", "effectiveness", "proficiency"],
+    "objects": [
+      "gear mechanics",
+      "power transfer",
+      "energy conservation",
+      "cycling cadence"
+    ]
+  },
+  "power": {
+    "keywords": ["power", "energy", "force", "strength"],
+    "objects": [
+      "pedaling power",
+      "wattage output",
+      "force transfer",
+      "muscle power"
+    ]
+  },
+  "savings": {
+    "keywords": ["savings", "economy", "reduction", "decrease"],
+    "objects": [
+      "energy savings",
+      "cost-effective components",
+      "efficient riding",
+      "budget options"
+    ]
+  },
+  "aerodynamics": {
+    "keywords": [
+      "dynamics",
+      "airflow control",
+      "aerodynamics",
+      "airflow",
+      "motion",
+      "streamlined design"
+    ],
+    "objects": [
+      "wind resistance",
+      "aero bike",
+      "time trial suit",
+      "helmet design",
+      "integrated cockpit",
+      "frame shape",
+      "wind tunnel-tested parts"
+    ]
+  },
+  "drag": {
+    "keywords": ["drag", "resistance", "friction", "hindrance"],
+    "objects": [
+      "wind drag",
+      "wheel turbulence",
+      "frame profile",
+      "gear resistance"
+    ]
+  },
+  "endurance": {
+    "keywords": ["endurance", "stamina", "resilience", "durability"],
+    "objects": [
+      "long rides",
+      "multi-day cycling",
+      "energy retention",
+      "bike durability"
+    ]
+  },
+  "racing": {
+    "keywords": ["racing", "competition", "contest", "event"],
+    "objects": [
+      "aero bike",
+      "bike racing",
+      "timed trials",
+      "competitive cycling"
+    ]
+  },
+  "precision": {
+    "keywords": ["precision", "accuracy", "exactness", "detail"],
+    "objects": [
+      "gear shifting",
+      "fit adjustment",
+      "control feedback",
+      "measurements"
+    ]
+  },
+  "momentum": {
+    "keywords": ["momentum", "impulse", "drive", "force"],
+    "objects": [
+      "speed retention",
+      "hill climbing",
+      "force application",
+      "acceleration"
+    ]
+  },
+  "adventure": {
+    "keywords": ["adventure", "excitement", "exploration", "journey"],
+    "objects": [
+      "cycling tours",
+      "new trails",
+      "exploratory routes",
+      "nature rides"
+    ]
+  },
+  "accessories": {
+    "keywords": ["accessories", "gear", "equipment", "apparatus"],
+    "objects": ["biking gloves", "lights", "bike computer", "water bottle"]
+  },
+  "price": {
+    "keywords": ["price", "cost", "value", "expense"],
+    "objects": [
+      "aero bike",
+      "components",
+      "cycling shoes",
+      "budget options",
+      "helmet",
+      "shoes",
+      "helmet & shoe set",
+      "accessories"
+    ]
+  },
+  "explain": {
+    "keywords": ["explain", "clarify", "describe", "elaborate"],
+    "objects": ["features", "benefits", "performance metrics", "technology"]
+  },
+  "compare": {
+    "keywords": ["compare", "contrast", "match", "evaluate"],
+    "objects": ["bike models", "gear setups", "component choices", "ride types"]
+  },
+  "customize": {
+    "keywords": ["customize", "personalize", "modify", "adapt"],
+    "objects": ["bike fit", "component choices", "accessory selection", "style"]
+  },
+  "warranty": {
+    "keywords": ["warranty", "guarantee", "assurance", "protection"],
+    "objects": [
+      "frame protection",
+      "component coverage",
+      "repair services",
+      "manufacturer support"
+    ]
+  },
+  "financing": {
+    "keywords": ["financing", "payment plan", "credit", "installment"],
+    "objects": [
+      "aero bike",
+      "accessory packages",
+      "upgrade options",
+      "bike loans"
+    ]
+  },
+  "test ride": {
+    "keywords": ["test ride", "trial", "demo", "try out"],
+    "objects": ["aero bike", "new models", "fit assessment", "road feel"]
+  },
+  "discount": {
+    "keywords": ["discount", "offer", "deal", "reduction"],
+    "objects": [
+      "seasonal offers",
+      "accessory bundles",
+      "cycling shoes",
+      "bulk purchase",
+      "helmet",
+      "previous models",
+      "helmet & shoe set"
+    ]
+  },
+  "compatible": {
+    "keywords": ["compatible", "suitable", "matching", "fit"],
+    "objects": ["bike parts", "accessories", "gear setups", "style"]
+  },
+  "maintenance": {
+    "keywords": ["maintenance", "care", "service", "upkeep"],
+    "objects": [
+      "bike tuning",
+      "component cleaning",
+      "repair services",
+      "regular check-ups"
+    ]
+  },
+  "service": {
+    "keywords": ["service", "repair", "help", "support"],
+    "objects": [
+      "bike shop",
+      "mobile repairs",
+      "customer support",
+      "warranty service"
+    ]
+  },
+  "shipment": {
+    "keywords": ["shipment", "delivery", "dispatch", "transport"],
+    "objects": [
+      "aero bike",
+      "components",
+      "accessory orders",
+      "international shipping"
+    ]
+  },
+  "international": {
+    "keywords": ["international", "global", "worldwide", "overseas"],
+    "objects": [
+      "shipping options",
+      "bike exchanges",
+      "global customer base",
+      "market presence"
+    ]
+  },
+  "safety": {
+    "keywords": ["safety", "protection", "security", "precaution"],
+    "objects": ["helmet", "reflective gear", "lights", "protective clothing"]
+  },
+  "beginner": {
+    "keywords": ["beginner", "novice", "starter", "learner"],
+    "objects": [
+      "entry-level bikes",
+      "beginner trails",
+      "support guides",
+      "training wheels"
+    ]
+  },
+  "upgrade": {
+    "keywords": ["upgrade", "improve", "enhance", "advance"],
+    "objects": ["components", "frame material", "gear ratios", "accessories"]
+  },
+  "community": {
+    "keywords": ["community", "group", "network", "forum"],
+    "objects": ["cycling clubs", "online forums", "local groups", "events"]
+  },
+  "eco-friendly": {
+    "keywords": ["eco-friendly", "sustainable", "green", "environmental"],
+    "objects": [
+      "manufacturing process",
+      "materials",
+      "products",
+      "cycling lifestyle"
+    ]
+  },
+  "coupon": {
+    "keywords": ["coupon", "voucher", "promo code", "discount"],
+    "objects": [
+      "website deals",
+      "store promotions",
+      "membership discounts",
+      "event offers"
+    ]
+  },
+  "event": {
+    "keywords": ["event", "occasion", "activity", "function"],
+    "objects": ["cycling races", "community rides", "expo", "demo days"]
+  },
+  "tutorial": {
+    "keywords": ["tutorial", "guide", "lesson", "instruction"],
+    "objects": [
+      "cycling techniques",
+      "maintenance",
+      "beginner tips",
+      "expert advice"
+    ]
+  },
+  "setup": {
+    "keywords": ["setup", "configuration", "installation", "arrangement"],
+    "objects": [
+      "bike fitting",
+      "accessory placement",
+      "training setups",
+      "gear alignment"
+    ]
+  },
+  "return policy": {
+    "keywords": ["return policy", "refund", "exchange", "return"],
+    "objects": [
+      "aero bike",
+      "accessories",
+      "online purchases",
+      "in-store items"
+    ]
+  },
+  "payment": {
+    "keywords": ["payment", "transaction", "fee", "purchase"],
+    "objects": ["bike purchase", "accessory buy", "service fees", "membership"]
+  },
+  "specification": {
+    "keywords": ["specification", "detail", "feature", "characteristic"],
+    "objects": [
+      "frame geometry",
+      "component details",
+      "weight",
+      "color options"
+    ]
+  },
+  "trade-in": {
+    "keywords": ["trade-in", "exchange", "swap", "replacement"],
+    "objects": [
+      "bike upgrade",
+      "old models",
+      "part exchanges",
+      "accessory swaps"
+    ]
+  },
+  "deal": {
+    "keywords": ["deal", "bargain", "offer", "agreement"],
+    "objects": [
+      "package deals",
+      "membership offers",
+      "seasonal bargains",
+      "service agreements"
+    ]
+  },
+  "durability": {
+    "keywords": ["toughness", "longevity", "robustness", "reliability"],
+    "objects": [
+      "frame welds",
+      "rim quality",
+      "tire compound",
+      "drivetrain lifespan"
+    ]
+  },
+  "availability": {
+    "keywords": ["stock", "in store", "delivery time", "lead time"],
+    "objects": [
+      "sizes in stock",
+      "current inventory",
+      "next shipment",
+      "warehouse item"
+    ]
+  },
+  "weather suitability": {
+    "keywords": ["rain proof", "wind resistant", "heat control", "all-weather"],
+    "objects": [
+      "waterproof jacket",
+      "thermal bibs",
+      "ventilated helmet",
+      "rain tires"
+    ]
+  },
+  "style": {
+    "keywords": ["trendy", "fashionable", "modern", "sleek"],
+    "objects": [
+      "custom colorway",
+      "retro look",
+      "matte finish",
+      "limited edition"
+    ]
+  },
+  "bundle": {
+    "keywords": ["combo", "package", "set", "kit"],
+    "objects": [
+      "helmet & shoe set",
+      "starter kit",
+      "race-day bundle",
+      "touring pack"
+    ]
+  }
 }

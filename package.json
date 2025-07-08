@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/Joey2039/project_SS25_website#readme",
   "dependencies": {
+    "@azure/ai-language-text": "^1.1.0",
     "@azure/data-tables": "^13.3.1",
-    "express": "^5.1.0"
-  }
+    "express": "^5.1.0",
+    "fuse.js": "^7.1.0"
+  },
+  "devDependencies": {}
 }

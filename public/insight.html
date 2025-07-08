@@ -39,14 +39,15 @@
         </div>
         <div class="main__content">
           <div class="main__content--center">
-            <h2>Insight</h2>
+            <h2>The Manufacturing Facility</h2>
             <p>
-              Discover the world of Aero Bikes! Designed for ultimate
-              performance and comfort, our bikes offer cutting-edge technology
-              and sleek aesthetics to elevate your cycling experience. Whether
-              you're conquering trails or cruising city streets, Aero Bikes
-              guarantees smooth and dynamic rides every time. Ride into the
-              future—choose Aero Bikes for unparalleled quality and innovation.
+              Dive into the heart of innovation with Aero-Bikes's
+              state-of-the-art manufacturing facility. This vast, organized
+              space is where precision craftsmanship meets cutting-edge
+              technology. Each bike is assembled with meticulous care,
+              reflecting Aero-Bikes's unwavering commitment to quality and
+              performance. Experience a glimpse into the environment where
+              cycling excellence begins.
             </p>
           </div>
         </div>
@@ -58,14 +59,14 @@
         </div>
         <div class="main__content">
           <div class="main__content--center">
-            <h2>Insight</h2>
+            <h2>Hands-On Assembly</h2>
             <p>
-              Discover the world of Aero Bikes! Designed for ultimate
-              performance and comfort, our bikes offer cutting-edge technology
-              and sleek aesthetics to elevate your cycling experience. Whether
-              you're conquering trails or cruising city streets, Aero Bikes
-              guarantees smooth and dynamic rides every time. Ride into the
-              future—choose Aero Bikes for unparalleled quality and innovation.
+              Witness the art of assembly in action, where Aero-Bikes's skilled
+              technicians build bikes that combine form and function flawlessly.
+              Surrounded by essential tools and components, this image
+              highlights the craftsmanship that goes into every detail. Discover
+              how Aero-Bikes transforms raw materials into world-class bikes
+              that promise unmatched ride quality.
             </p>
           </div>
         </div>
@@ -77,18 +78,68 @@
         </div>
         <div class="main__content">
           <div class="main__content--center">
-            <h2>Insight</h2>
+            <h2>Aerodynamic Testing in the Wind Tunnel</h2>
             <p>
-              Discover the world of Aero Bikes! Designed for ultimate
-              performance and comfort, our bikes offer cutting-edge technology
-              and sleek aesthetics to elevate your cycling experience. Whether
-              you're conquering trails or cruising city streets, Aero Bikes
-              guarantees smooth and dynamic rides every time. Ride into the
-              future—choose Aero Bikes for unparalleled quality and innovation.
+              Explore the future of speed in Aero-Bikes's wind tunnel. As vapor
+              dances around the wheel, see how Aero-Bikes pushes the limits of
+              aerodynamics to deliver bikes with unparalleled efficiency. This
+              image captures the essence of Aero-Bikes's dedication to
+              scientific innovation, ensuring each bike offers superior ride
+              performance and thrills.
             </p>
           </div>
         </div>
       </div>
     </div>
+    <!-- Chatbot -->
+    <div class="chat__bot">
+      <div class="chat__bot--container">
+        <button
+          class="chatbot__button"
+          onclick="chatbotToggle()"
+          id="chatbot--main"
+        >
+          <img src="/images/message_1.svg" alt="Chatbot" id="chatbot-icon" />
+        </button>
+      </div>
+      <div class="chat-card" id="chat-card">
+        <div class="chat-header">
+          <div class="h2">Aero Assident</div>
+          <div class="close-button" onclick="chatbotClose()">
+            <img src="/images/close.svg" alt="Close" id="chatbot-close" />
+          </div>
+        </div>
+        <div class="chat-body">
+          <div class="message incoming">
+            <p>
+              Hello! I'm Aero Assistant, your specialist for all things road
+              bikes. Here to help you find the perfect ride, answer your
+              questions, and enhance your shopping experience.
+            </p>
+          </div>
+          <div class="message incoming">
+            <p>
+              You can ask me about for example about the compatible of
+              accessories.
+            </p>
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input
+            placeholder="Type your message"
+            type="text"
+            id="chatbot-input"
+          />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+    <script src="/scripts/app.js"></script>
+    <script src="scripts/chatbot_toggle.js"></script>
+    <script type="module" src="scripts/chatbot_reagtion_v2.js"></script>
+    <script type="module">
+      import { sendMessage } from "./scripts/chatbot_reagtion_v2.js";
+      window.sendMessage = sendMessage;
+    </script>
   </body>
 </html>
